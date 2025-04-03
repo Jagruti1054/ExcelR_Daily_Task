@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<HTML lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GRID 2</title>
+        <style>
+            .container{
+                display: grid;
+                grid-template-areas: " header   header "
+                                     " content  section1 "
+                                     " content  section2 "
+                                     " footer   footer ";
+
+            }
+            .item{
+                font-size: 40px;
+                margin: 5px;
+                text-align: center;
+                align-content: center;
+                border-radius: 20px;
+            }
+            .header{
+                background-color: rgb(255, 68, 0);
+                grid-area: header;
+            }
+            .content{
+                background-color: rgb(211, 226, 43);
+                grid-area: content;
+            }
+            .section1{
+                background-color: rgb(127, 255, 168);
+                grid-area: section1;
+
+            }
+            .section2{
+                background-color: rgb(160, 95, 144);
+                grid-area: section2;
+                
+            }
+            .footer{
+                background-color: rgb(255, 0, 81);
+                grid-area: footer;
+               
+            }
+        </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="item header">Header</div>
+            <div class="item content">Content</div>
+            <div class="item section1">Section1</div>
+            <div class="item section2">Section2</div>
+            <div class="item footer">footer</div>
+            
+    </body>
+    </HTML>
